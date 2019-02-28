@@ -1,6 +1,6 @@
 ---
 title: "Lexical Scoping in Swift"
-date: 2018-12-03T21:08:05+05:30
+date: 2017-12-03T21:08:05+05:30
 tags: [
     "Swift",
     "iOS",
