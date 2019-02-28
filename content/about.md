@@ -1,7 +1,6 @@
 ---
 title: "Swapnil Sankla"
 date: 2019-02-25T21:08:05+05:30
-draft: true
 ---
 I love working on variety of techs varying from desktop, web to mobile.
 <ul>

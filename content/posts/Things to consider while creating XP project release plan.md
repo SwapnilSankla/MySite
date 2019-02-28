@@ -1,7 +1,6 @@
 ---
 title: "Things to Consider While Creating XP Project Release Plan"
 date: 2019-02-25T21:08:05+05:30
-draft: true
 ---
 This blog lists down the common things which developers and QAs should consider while doing project planning exercise. However before jumping on to the list, let me cover some background first.
 
