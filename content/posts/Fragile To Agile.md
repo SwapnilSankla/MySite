@@ -33,7 +33,7 @@ Ok so what were we doing wrong?
 </ul>
 
 <p align="center">
-<img src="/images/AmIAgile.png" height="400" width="900">
+<img src="/images/AmIAgile.png">
 <a href="https://www.google.co.in/search?q=gorilla+thinking+image&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwiw4eaghMDZAhUMLI8KHcP3D-UQsAQIJQ&biw=1307&bih=669#imgrc=29KG_6j3ZyST_M:">Image source</a>
 </p>
 
