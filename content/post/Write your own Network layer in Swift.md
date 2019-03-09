@@ -42,7 +42,7 @@ To determine whether the request has actually succeeded or not, we rely on each 
 
 With above details I wrote my first network layer code.
 
-#### First attempt
+### First attempt
 
 {{< highlight swift "linenos=table">}}
 import Foundation
@@ -61,7 +61,7 @@ Bingo! It’s super simple. Make sure you call resume() method so that the suspe
 
 Though the above code is simple however the caller needs to do a lot of things. It needs to take care of building and processing urlRequest and completionHandler. Most of the code which caller writes is actually common. So let’s try to simplify that.
 
-#### Second attempt
+### Second attempt
 {{< highlight swift "linenos=table">}}
 import Foundation
 
@@ -118,7 +118,7 @@ What did I change?
 
 Taking a closer look, I felt converting Data to appropriate response object task is also common among all consumers. So why should everyone repeat the logic? That brought me to the third attempt.
 
-#### Third attempt
+### Third attempt
 {{< highlight swift "linenos=table">}}
 import Foundation
 
@@ -188,7 +188,7 @@ Looking closely at caller’s code one can understand the power of <i>generics</
 
 Still the creation of URLRequest can be extracted out. Let’s do that too!
 
-#### Fourth attempt
+### Fourth attempt
 
 {{< highlight swift "linenos=table">}}
 class NetworkLayer {

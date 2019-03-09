@@ -2,6 +2,16 @@
 title: "Swapnil Sankla"
 date: 2019-02-25T21:08:05+05:30
 ---
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+
+<p align="center">
+<img src="/images/SwapnilSankla.jpeg" border-radius= "0.5"/>
+</p>
+
 I love working on variety of techs varying from desktop, web to mobile.
 <ul>
 <li>Mobile development (Swift, Objective C, JavaScript, ES6, Hybrid application development)</li>

@@ -1,54 +1,77 @@
 baseurl = "/"
 title = "Swapnil Sankla"
-theme = "hugo-coder"
+theme = "hugo-theme-even"
 languagecode = "en"
-defaultcontentlanguage = "en"
-
-paginate = 20
+paginate = 5
 canonifyurls = true
-
 disqusShortname = "swapnilsankla"
 
+enableEmoji = true
+
+# Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
+pygmentsOptions = "linenos=table"
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+
+[author]                  # essential
+  name = "Swapnil Sankla"
+
+[sitemap]                 # essential
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[[menu.main]]             # config your menu
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[menu.main]]
+  name = "About me"
+  weight = 20
+  identifier = "aboutMe"
+  url = "/about/"
+
 [params]
-    author = "Swapnil Sankla"
-    info = "Developer"
-    keywords = "blog,developer,personal"
-    avatarurl = "images/SwapnilSankla.jpeg"
+  version = "4.x"           # Used to give a friendly message when you have an incompatible update
+  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+  since = "2017"            # Site creation time
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+  # site info (optional)
+  logoTitle = "Swapnil Sankla"        # default: the title value
+  keywords = ["Swapnil Sankla", "swapnilsankla.me","blogs", "Swift", "Agile"]
+  description = "Swapnil Sankla's personal blog site"
 
-    show_reading_time = true
-    body_classes = "Monaco bg-near-white"
-    hidecredits = false
-    hidecopyright = false
+  # paginate of archives, tags and categories
+  archivePaginate = 5
 
-    rtl = false
+  # show 'xx Posts In Total' in archive page ?
+  showArchiveCount = false
 
-    math = true
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/SwapnilSankla"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 2
-    url = "https://twitter.com/swapnil_sankla"
-[[params.social]]
-    name = "Linkedin"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 3
-    url = "https://www.linkedin.com/in/swapnil-sankla-30525225/"
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "02-Jan-2006"
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About me"
-    weight = 2
-    url = "/about/"
+  # show word count and read time ?
+  moreMeta = true
+
+  # Syntax highlighting by highlight.js
+  highlightInClient = false
+
+  # archetypes/default.md。
+  # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+  toc = true
+  autoCollapseToc = true   # Auto expand and collapse toc
+  fancybox = true           # see https://github.com/fancyapps/fancybox
+
+ [params.social]
+    a-email = "mailto:swapnilsankla@email.com"
+    c-twitter = "https://twitter.com/swapnil_sankla"
+    e-linkedin = "https://www.linkedin.com/in/swapnil-sankla-30525225/"
+    g-github = "https://github.com/SwapnilSankla"
+

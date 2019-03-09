@@ -23,7 +23,7 @@ To come up with a plan or a project schedule we
 
 Assuming the user stories are created, we use complexity based estimation technique to estimate stories.
 
-<B>Complexity based estimates:</B> 
+## Complexity based estimates
 
 Some people use Fibonacci numbers while some uses T-shirt size (Small, medium, large) nomenclature to estimate the stories.
 Important thing to consider, this number denotes the complexity of the task but not the effort required to accomplish a task.
@@ -31,7 +31,7 @@ Team picks up the simplest story from the story deck and estimate it. Then this 
 
 Next step is to do a Raw velocity exercise.
 
-<B>Raw velocity exercise:</B>
+## Raw velocity exercise
 <ul>
   <li>After estimating the entire scope now it’s essential to come up with a plan based on efforts i.e. plan in man hours/ months. This is what the client is actually looking for. To convert the estimates to a rough plan we do a Raw velocity exercise as follows.
      <ul>
@@ -45,6 +45,7 @@ Next step is to do a Raw velocity exercise.
 
 Simple story so far, right? However I have seen people tend to forget things which they should ideally consider while doing the raw velocity exercise. This leads to incorrect calculations and wrong expectation settings with clients. 
 
+## Checklist
 Following is a checklist which I follow. Some of these will impact the velocity calculation while some items deserves a separate story. 
 <ul>
  <li>Existing code base understanding</li>

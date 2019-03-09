@@ -21,7 +21,7 @@ Folks, you must be wondering what kinda title is this! But I would like to share
 
 List seems sufficient to qualify for Agile, isn’t it? However there were many things which we were doing incorrectly. So instead of Agile, the process was actually qualifying for ‘Fragile development’
 
-Ok so what were we doing wrong?
+## Ok so what were we doing wrong?
 
 <ul>
   <li>Everyday starts with a standup however not everyone in Team is attending standup.</li>
@@ -37,7 +37,9 @@ Ok so what were we doing wrong?
 <a href="https://www.google.co.in/search?q=gorilla+thinking+image&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwiw4eaghMDZAhUMLI8KHcP3D-UQsAQIJQ&biw=1307&bih=669#imgrc=29KG_6j3ZyST_M:">Image source</a>
 </p>
 
-Sounds like we are doing enough wrong things and hence we cannot say that we are Agile. Apparently we started new project. My BA(Vardhan) and I decided to address these concerns. Simple tricks helped us. Below is how.
+Sounds like we are doing enough wrong things and hence we cannot say that we are Agile. Apparently we started new project. My BA(Vardhan) and I decided to address these concerns. 
+
+## Simple tricks helped us. Below is how.
 
 <ul>
   <li>We started penalties for people who miss standup and for latecomers. Few bucks for every miss! Cool isn’t it! However as money is the easiest thing to pay, people started paying the dues without realising that missing standup is a problem.
