@@ -70,7 +70,7 @@ pygmentsCodefencesGuessSyntax = true
   fancybox = true           # see https://github.com/fancyapps/fancybox
 
  [params.social]
-    a-email = "mailto:swapnilsankla@gmail.com"
+    a-email = "mailto:swapnil.sankla@gmail.com"
     c-twitter = "https://twitter.com/swapnil_sankla"
     e-linkedin = "https://www.linkedin.com/in/swapnil-sankla-30525225/"
     g-github = "https://github.com/SwapnilSankla"
