@@ -2,7 +2,7 @@ baseurl = "/"
 title = "Swapnil Sankla"
 theme = "hugo-theme-even"
 languagecode = "en"
-paginate = 5
+paginate = 50
 canonifyurls = true
 disqusShortname = "swapnilsankla"
 
@@ -49,7 +49,7 @@ pygmentsCodefencesGuessSyntax = true
   description = "Swapnil Sankla's personal blog site"
 
   # paginate of archives, tags and categories
-  archivePaginate = 5
+  archivePaginate = 50
 
   # show 'xx Posts In Total' in archive page ?
   showArchiveCount = false
