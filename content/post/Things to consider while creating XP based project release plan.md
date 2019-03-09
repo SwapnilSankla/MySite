@@ -7,6 +7,13 @@ tags: [
     "Project planning",
 ]
 ---
+<p align= "center">
+    <img src="/images/ProjectPlanning_Banner.jpg" width="90%">
+    <p align="center">
+      <a href="https://www.google.com/search?q=inception+agile&tbm=isch&tbs=rimg:CU1WmTLpmIoAIjiuiodQH5cMERjnNZLRGuQBvI2PfcJ41S9mpjSN_1RV00mJDeFn4QDXlWXR2gXcnSiLULLfDdTGYQyoSCa6Kh1AflwwREd4PIbps6ILOKhIJGOc1ktEa5AERjUE2ixJvCkwqEgm8jY99wnjVLxHzoztorYTNBioSCWamNI39FXTSEVw5wYEeOojeKhIJYkN4WfhANeURbnrmiwGZP6cqEglZdHaBdydKIhGVYR6yIJ9WmSoSCdQst8N1MZhDEfnVOyQOfd4g&tbo=u&sa=X&ved=2ahUKEwj9ksiKyPXgAhVNinAKHdLEA6wQ9C96BAgBEBs&biw=1344&bih=719&dpr=2.5#imgrc=TVaZMumYigC2_M:">Image source</a>
+    </p>
+</p>
+
 This blog lists down the common things which developers and QAs should consider while doing project planning exercise. However before jumping on to the list, let me cover some background first.
 
 @<a href="https://www.thoughtworks.com/">ThoughtWorks</a> we follow XP practices. Any typical project starts with an Inception. It is a sort of workshop which typically starts with discovering what problem client is trying to solve. And it ends with a rough plan of how this problem can be solved. 

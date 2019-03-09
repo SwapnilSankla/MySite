@@ -8,6 +8,14 @@ tags: [
     "Team",
 ]
 ---
+
+<p align= "center">
+    <img src="/images/FragileToAgile_Banner.png" width="90%">
+    <p align="center">
+      <a href="https://www.google.co.in/search?q=Think+beyond+images&tbm=isch&source=iu&ictx=1&fir=FT05cLzO5z12vM%253A%252CA-B9eT3if0k9MM%252C_&usg=__KGOxrqyPs5Dd1xH6u3q2qwshxN0%3D&sa=X&ved=0ahUKEwiYyNX96r7ZAhUGvLwKHbgSByYQ9QEIKjAB#imgrc=FT05cLzO5z12vM:">Image source</a>
+    </p>
+</p>
+
 Folks, you must be wondering what kinda title is this! But I would like to share my experience of how we turned the Fragile development into working Agile development.
 
 @<a href="https://www.thoughtworks.com/">ThoughtWorks</a> every project follows Agile software development practice. Our project is no exception. We were following most of the rituals. 

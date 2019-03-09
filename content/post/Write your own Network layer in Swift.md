@@ -8,6 +8,14 @@ tags: [
     "RxSwift",
 ]
 ---
+
+<p align= "center">
+    <img src="/images/NetworkLayer_Banner.jpeg" width="90%">
+    <p align= "center"> 
+        <a href="https://www.flickr.com/photos/86530412@N02/7975205041">Image source</a>
+    </p>
+</p>
+
 Let us try to build our own Network layer in pure Swift. It is super simple to build with Swift’s strong support for generics, type inference
 
 So let’s start with basics. This network layer is based on <a href="https://developer.apple.com/documentation/foundation/urlsession">URLSession</a> object. By definition this is an object that coordinates a group of related network data transfer tasks. You don’t even need to create a custom object of URLSession in most of the cases. We will also keep it simple and use the default shared instance.

@@ -7,6 +7,14 @@ tags: [
     "Lexical scoping",
 ]
 ---
+
+<p align= "center">
+    <img src="/images/LexicalScoping_Banner.png" width="90%">
+    <p align= "center"> 
+    <a href="https://swift.org/">Image source</a>
+    </p>
+</p>
+
 While going through lexical scoping concept in <a href="https://en.wikipedia.org/wiki/Lisp_%28programming_language%29">LISP</a>; I wondered whether such support is available in Swift or not. And it does. Yay…
 
 I took a simple function — ‘square root of a number' to try out the lexical scoping. I used <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton's method</a> for calculating square roots. Below is the first version.
