@@ -35,6 +35,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
   name = "About me"
   weight = 20
+  identifier = "tags"
   url = "/about/"
 
 [params]
