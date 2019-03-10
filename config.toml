@@ -5,6 +5,8 @@ languagecode = "en"
 paginate = 50
 canonifyurls = true
 disqusShortname = "swapnilsankla"
+googleAnalytics = "UA-135959554-1"
+
 
 enableEmoji = true
 
