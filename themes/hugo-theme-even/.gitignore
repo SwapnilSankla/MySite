@@ -1,4 +1,4 @@
 node_modules/
 .idea/
-*.iml
-exampleSite/resources/
+static/dist/*.min.js.map
+static/dist/*.min.css.map
