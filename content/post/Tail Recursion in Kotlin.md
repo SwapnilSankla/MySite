@@ -113,7 +113,7 @@ As per https://wiki.c2.com/?TailCallOptimization
 <h4><b>Tail-call optimization (or tail-call merging or tail-call elimination) is a generalization of TailRecursion: If the last thing a routine does before it returns is call another routine, rather than doing a jump-and-add-stack-frame immediately followed by a pop-stack-frame-and-return-to-caller, it should be safe to simply jump to the start of the second routine, letting it re-use the first routine's stack frame (environment).</b></h4>
 </div>
 
-In simple words, smart execution engines detects the tail recursive methods and convert them to iterative code. This solves the chaining problem and also developers can enjoy writing recursive methods which are simple to understand. However <u>JVM does not natively support tail call optimization.</u> Don't worry! Kotlin compiler does it for us. Mark tail recursive method with <b><u>tailrec</u></b> annotation and rest is done by the compiler.
+In simple words, smart execution engines detects the tail recursive methods and convert them to iterative code. This solves the chaining problem and also developers can enjoy writing recursive methods which are simple to understand. However <u>JVM does not natively support tail call optimization.</u> Don't worry! Kotlin compiler does it for us. Mark tail recursive method with <b><u>tailrec</u></b> modifier and rest is done by the compiler.
 
 Below is the sample.
 
