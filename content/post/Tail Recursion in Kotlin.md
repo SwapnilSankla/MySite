@@ -104,7 +104,7 @@ Let's see how will it work if we call it with number 7
 5040
 {{</highlight >}}
 
-Main difference is now the execution is <i>not deferred</i>. It is all about computing first before recursively calling the method again. Hence execution engine does not need to remember variables state at every method call. However still the chain needs to be remembered. Meaning we have partly sovled the problem. Let's explore <b><u>Tail call optimization</u></b> to solve this further.
+Main difference is now the execution is <i>not deferred</i>. It is all about computing first before recursively calling the method again. Hence execution engine does not need to remember variable's state at every method call. However still the chain needs to be remembered. Meaning we have partly solved the problem. Let's explore <b><u>Tail call optimization</u></b> to solve this further.
 
 <h2>Tail call optimization</h2>
 As per https://wiki.c2.com/?TailCallOptimization
