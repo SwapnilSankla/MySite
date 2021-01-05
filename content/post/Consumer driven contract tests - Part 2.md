@@ -10,7 +10,6 @@ tags: [
     "gradle",
     "junit5"
 ]
-draft: true
 ---
 I introduced the contract test concept in the <a href="https://swapnilsankla.me/post/consumer-driven-contract-tests-part-1">previous</a> blog. In this blog we will explore writing contract tests for services which communicate over Http. Tests are written using:
 <ol>
