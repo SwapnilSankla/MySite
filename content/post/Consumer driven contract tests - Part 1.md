@@ -15,7 +15,7 @@ In the world of microservices we often talk about the benefits of microservices.
 
 Before solving the problem let’s take a step back. Why do we need other microservices running to test a tiny code change in one of the service? The answer is, services communicate with each other to achieve a common goal. And we need to make sure that the code change does not break the working functionality. It is actually sufficient to make sure that the code change does not impact the API of the service. If the API of the service is intact then we can safely assume that the consumer microservices of this particular service are going to work correctly. This is how we can avoid launching the entire application for testing change in a service. But who is going to verify that the API of the service is intact? The answer is Contract tests. Let’s take a simple example to understand this further.
 
-<h1>Simple loan granting system</h1>
+## Simple loan granting system
 The example is intentionally kept simple to keep focus on contract tests. The ecosystem works as below.
 <ol>
   <li>User applies for the loan by calling gateway API</li>
@@ -54,7 +54,7 @@ The yellow boxes would go away. This is what we would get with Contract tests.
 
 Contract test validates whether a service adheres it’s contract with other services or not. Contract is the agreement between a consumer service and the provider service. The communication medium between the services can be synchronous or asynchronous. Both mediums can be tested with contract tests.
 
-<h2>Consumer driven contract tests</h2>
+## Consumer driven contract tests
 
 As the name suggests, consumer creates a contract describing it’s expectations from the provider service. Provider service runs the contract shared by the consumer and makes sure that the consumer expectations are met. If expectation is not met then the provider cannot roll out it’s change.
 

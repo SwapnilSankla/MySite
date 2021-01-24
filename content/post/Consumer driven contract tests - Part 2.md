@@ -22,7 +22,7 @@ The code is available on <a href="https://github.com/SwapnilSankla/cdc.git">gith
 
 Consumers drive contracts. They create and pass it to provider. Provider is supposed to make sure the consumer expectations are met. Provider cannot roll out it’s change if consumer's expectation are not met. Pact will help us test it.
 
-<h2>Consumer test</h2>
+## Consumer test
 Consumer tests are generally written for a class which are responsible for communicating with other service. Let’s start with the first test. Intent of this test is to cover the interaction between loan gateway and fraud service. Loan gateway and fraud service are the components which I introduced in the <a href="https://swapnilsankla.me/post/consumer-driven-contract-tests-part-1">previous</a> blog. Loan gateway passes customer id to fraud service and expects a response containing whether the given customer has fraudulent status or not. Following is a code snippet of FraudCheckService in the loan gateway service.
 
 {{< gist SwapnilSankla 910e2dfe53a8965084f3b0703edc75b1 >}}
@@ -87,7 +87,7 @@ This method is self-explanatory. We basically describe what the request and resp
 <li>This contract is shared with provider and provider makes sure that it adheres to the consumer expectation. For easy sharing, pact provides a broker which stores the published contracts. We will cover broker topic separately.</li>
 </ol>
 
-<h2>Provider test</h2>
+## Provider test
 Provider tests are written for the controller layer. Rest of the service components are stubbed/mocked. This is because the interaction between controller and other components is already tested with the integration tests. 
 
 Let’s start with the provider test.
@@ -132,7 +132,7 @@ Verifying a pact between loan_gateway and fraud_service
 </li>
 </ol>
 
-<h3>Publish verification results</h3>
+### Publish verification results
 <ol>
 <li>Pact looks for an environment variable <i>pact.verifier.publishResults</i> and if it is set to true then the results are published.</li>
 <li>One can set this property in the setup method of the provider tests. However this needs to be repeated for each provider test class.</li>
@@ -147,7 +147,9 @@ Verifying a pact between loan_gateway and fraud_service
 <li>That’s it, now the verification results would be published.</li>
 <li>Problem with this approach is, we hard coded the provider version. Now let’s take one more step and use project version specified in the build.gradle.</li>
 </ol>
-<h3>Refer application version from build.gradle</h3>
+
+### Refer application version from build.gradle
+
 <ol>
 <li>
 Let’s use Gradle’s <i>ProcessResources</i> task. It enables us to access gradle properties in the application properties file. Add below code to build.gradle.

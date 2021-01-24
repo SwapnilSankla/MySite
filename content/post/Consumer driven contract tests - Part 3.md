@@ -15,7 +15,7 @@ This is the third blog in the Consumer driven contract tests blog series. I intr
 
 In our example loan gateway emits the loan creation event. Loan fulfilment service listens to it and does further processing. In case of Http based communication, we have seen that Pact framework runs mock Http server. Message based communication differs from Http in way that there is no single standard way of communication. It can be established using various tools like Kafka, RabbitMQ, ActiveMQ etc. <u>Pact may not want to couple itself with these tools, and hence it does not launch any of them</u> while running the tests, rather it just enables us to make sure the event consumer and event producers adhere to the exact same schema. Ultimately that's what we want! Let's jump to the code. 
 
-<h2>Consumer test</h2>
+## Consumer test
 
 Let’s start with the consumer test. In our example the listener in the loan fulfilment service is the consumer of the event emitted by loan gateway. Below are the steps to generate consumer tests and the contract.
 
@@ -64,7 +64,7 @@ Running this test generates the contract in the target/pacts folder.
 </li>
 </ol>
 
-<h2>Provider test</h2>
+## Provider test
 <ol>
 <li>On the provider side we need to specify sample event which is adheres to the schema provided by the consumer.</li>
 <li>Let’s start with the spring boot test and add the pact test as below. We set up the context with target as AmpqTestTarget.</li>
