@@ -13,7 +13,7 @@ tags: [
 ---
 This is the third blog in the Consumer driven contract tests blog series. I introduced the concept in the <a href="https://swapnilsankla.me/post/consumer-driven-contract-tests-part-1/">first</a> blog. <a href="https://swapnilsankla.me/post/consumer-driven-contract-tests-part-2/">Second</a> blog covers writing contract testing using Pact for synchronous communication. In this blog, let's cover how to write contract test when communication medium is message based. 
 
-In our example loan gateway emits the loan creation event. Loan fulfilment service listens to it and does further processing. Now in case of Http based communication, we have seen that Pact framework runs mock Http server. Message based communication can be established using many tools. <u>Unlike mock http, Pact does not launch any of them</u>, it just enables us to make sure the event consumer and event producers adhere to the same schema. Ultimately that's what we want! 
+In our example loan gateway emits the loan creation event. Loan fulfilment service listens to it and does further processing. In case of Http based communication, we have seen that Pact framework runs mock Http server. Message based communication differs from Http in way that there is no single standard way of communication. It can be established using various tools like Kafka, RabbitMQ, ActiveMQ etc. <u>Pact may not want to couple itself with these tools, and hence it does not launch any of them</u> while running the tests, rather it just enables us to make sure the event consumer and event producers adhere to the exact same schema. Ultimately that's what we want! Let's jump to the code. 
 
 <h2>Consumer test</h2>
 
@@ -21,10 +21,7 @@ Let’s start with the consumer test. In our example the listener in the loan fu
 
 <ol>
 <li>
-As usual, let's start with a spring boot test. As the LoanFulfilmentConsumer class is the consumer in this case, we will write a test for it.
-</li>
-<li>
-Let’s define the pact method first this time. We need to build MessagePact instead of RequestResponsePact. Below is the method.
+As usual, let's start with a spring boot test. As the LoanFulfilmentConsumer class is the consumer in this case, we will write a test for it. Let’s define the pact method first this time. We need to build MessagePact instead of RequestResponsePact. Below is the method.
 <p></p>
 {{< gist SwapnilSankla dcf2e7ee019ef9c4889c4cafc506346a >}}
 
@@ -60,8 +57,7 @@ The test method is supposed to receive messages. And we need to make sure that t
 We need to explicitly specify that the provider is going to be asynchronous. We can specify that using pactTestFor annotation. Below is the entire test.
 <p></p>
 {{< gist SwapnilSankla c6e37cc3ec470d8d4d7c2ca59f57113c >}}
-</li>
-<li>
+<p></p>
 Running this test generates the contract in the target/pacts folder.
 <p></p>
 {{< gist SwapnilSankla 7a6d78c07201c6a5d96f1c9f3eeeb8fb >}}
@@ -82,8 +78,8 @@ Running this test generates the contract in the target/pacts folder.
 <li>Looking at the string ‘Loan creation event’ makes us realise that we have mentioned this string in the expectsToReceive clause. Let’s recall the purpose. The provider needs to provide a sample event from a method annotated with this description. Let’s add a method to provide the sample event.
 <p></p>
 {{< gist SwapnilSankla 87955bfbee7e5ab441a06ab0d6a6321e >}}
-</li>
-<li>Below is the entire test.
+<p></p>
+Below is the entire test.
 <p></p>
 {{< gist SwapnilSankla be172ecdd73cd3d5d043fd210c645fec >}}
 </li>
