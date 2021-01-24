@@ -35,7 +35,7 @@ pygmentsCodefencesGuessSyntax = true
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "About me"
+  name = "About"
   weight = 20
   identifier = "categories"
   url = "/about/"
